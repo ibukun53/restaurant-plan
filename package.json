@@ -1,22 +1,28 @@
 {
   "name": "restaurant-plan",
   "version": "1.0.0",
-  "description": "> One paragraph statement about the project.",
-  "main": ".prettierrc.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ibukun53/restaurant-plan.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ibukun53/restaurant-plan/issues"
-  },
-  "homepage": "https://github.com/ibukun53/restaurant-plan#readme",
+  "private": true,
+  "dependencies": {},
   "devDependencies": {
-    "hint": "^6.2.0"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^4.0.2",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^1.19.1",
+    "stylelint": "^13.x",
+    "stylelint-config-recommended": "^3.x",
+    "stylelint-config-standard": "^20.x",
+    "stylelint-csstree-validator": "^1.x",
+    "stylelint-scss": "^3.x"
+  },
+  "scripts": {
+    "format": "npx prettier --write \"**/*.{html,json,md,yaml,yml}\"",
+    "format:check": "npx prettier  --check \"**/*.{html,json,md,yaml,yml}\"",
+    "lint": "npx stylelint \"**/*.css\" --fix && npx eslint . --fix",
+    "lint:check": "npx stylelint \"**/*.css\" && npx eslint .",
+    "stylelint": "npx stylelint \"**/*.css\" --fix",
+    "stylelint:check": " ",
+    "eslint": "npx eslint . --fix",
+    "eslint:check": "npx eslint ."
   }
 }
