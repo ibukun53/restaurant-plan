@@ -1,0 +1,22 @@
+{
+  "name": "restaurant-plan",
+  "version": "1.0.0",
+  "description": "> One paragraph statement about the project.",
+  "main": ".prettierrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibukun53/restaurant-plan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibukun53/restaurant-plan/issues"
+  },
+  "homepage": "https://github.com/ibukun53/restaurant-plan#readme",
+  "devDependencies": {
+    "hint": "^6.2.0"
+  }
+}
